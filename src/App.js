@@ -9,8 +9,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      value: "Utkarsh",
-      password: "ut123@@",
+      value: "",
+      password: "",
       showValue: "",
       showPassword: "",
     };
