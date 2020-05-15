@@ -9,8 +9,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      value: "",
-      password: "",
+      value: "Utkarsh",
+      password: "ut123@@",
       showValue: "",
       showPassword: "",
     };
@@ -34,7 +34,6 @@ class App extends React.Component {
         type={input.type}
         name={input.name}
         label={input.label}
-        value={this.state}
         onChange={this.onChangeText}
       ></Input>
     ));

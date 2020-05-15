@@ -8,7 +8,6 @@ export default function Input(props) {
         <input
           type={props.type}
           name={props.name}
-          value={props.value[props.name]}
           onChange={(e) => props.onChange(props.name, e)}
         ></input>
       </label>
