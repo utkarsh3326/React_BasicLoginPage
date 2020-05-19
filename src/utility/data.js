@@ -8,8 +8,8 @@ const Data = {
     },
     {
       id: "asdasd213",
-      name: "Password",
-      label: "password",
+      name: "password",
+      label: "Password",
       type: "text",
     },
   ],

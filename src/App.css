@@ -45,3 +45,8 @@
   background-color: grey;
   text-align: center;
 }
+.login_form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}

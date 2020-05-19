@@ -1,17 +1,32 @@
+import Identity from "lodash/identity";
+import PropTypes from "prop-types";
 import React from "react";
 
-export default function Input(props) {
+export default function Input({ label, name, onChange, type }) {
   return (
     <>
       <label>
-        {props.label}
+        {label}
         <input
-          type={props.type}
-          name={props.name}
-          onChange={(e) => props.onChange(props.name, e)}
+          name={name}
+          onChange={(e) => onChange(name, e)}
+          type={type}
         ></input>
       </label>
-      <br></br>
     </>
   );
 }
+
+Input.defaultProps = {
+  label: "Label Name",
+  name: "name",
+  onChange: Identity,
+  type: "text",
+};
+
+Input.propTypes = {
+  label: PropTypes.string,
+  name: PropTypes.string,
+  onChange: PropTypes.func,
+  type: PropTypes.string,
+};
